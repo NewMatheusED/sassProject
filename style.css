@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -21,6 +21,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  margin-bottom: 50px;
 }
 
 header .topHeader {
@@ -63,6 +64,14 @@ header .topHeader .menu ul li:hover {
   color: #ff5f27;
 }
 
+header .topHeader .menuMobile {
+  display: none;
+  color: #fff;
+  font-size: 35px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
 header .chamadaHeader {
   text-align: left;
   margin-top: 100px;
@@ -96,5 +105,93 @@ header .chamadaHeader input[type="submit"] {
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+section.sobre .container > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  font-size: 18px;
+  font-style: italic;
+}
+
+section.sobre .container > p b {
+  color: #000;
+}
+
+section.sobre .flexSobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto;
+}
+
+section.sobre .flexSobre .text {
+  text-align: left;
+  max-width: 500px;
+}
+
+section.sobre .flexSobre .text h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+section.sobre .flexSobre .text p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+section.sobre .img {
+  max-width: 460px;
+  max-height: 310px;
+}
+
+section.sobre .img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  section.sobre .container .flexSobre {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  header .topHeader .menu {
+    display: none;
+  }
+  header .topHeader .menuMobile {
+    display: block;
+  }
+  header .chamadaHeader {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 100%;
+  }
+  header .chamadaHeader h2, header .chamadaHeader p, header .chamadaHeader form {
+    text-align: center;
+  }
+  header .chamadaHeader h2 {
+    font-size: 35px;
+  }
+  header .chamadaHeader p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

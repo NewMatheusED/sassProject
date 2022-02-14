@@ -2,7 +2,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: sans-serif
+    font-family: 'Roboto', sans-serif
 
 html, body 
     height: 100%
@@ -17,6 +17,7 @@ header
     background-size: cover
     background-repeat: no-repeat  
     height: 500px
+    margin-bottom: 50px
 
     .topHeader
         display: flex
@@ -44,6 +45,13 @@ header
 
                     &:hover
                         color: #ff5f27
+
+        .menuMobile
+            display: none
+            color: #fff
+            font-size: 35px
+            margin-top: 22px
+            cursor: pointer
 
     .chamadaHeader
         text-align: left
@@ -75,5 +83,81 @@ header
             border-radius: 20px
             cursor: pointer
 
-
+section.sobre
+    .container > p
         
+        text-align: center
+        max-width: 600px
+        margin: 0 auto 
+        color: rgba(0, 0, 0, .7)
+        line-height: 1.5
+        font-size: 18px
+        font-style: italic
+
+        b
+            color: #000
+
+    .flexSobre
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 100px auto
+
+        .text
+            text-align: left
+            max-width: 500px
+
+            h2
+                color: rgba(0, 0, 0, .7)
+                font-size: 20px
+                line-height: 1.5
+                margin-bottom: 30px
+
+            p 
+                color: rgba(0, 0, 0, .6)
+                font-size: 16px
+                line-height: 1.5
+                margin-bottom: 50px
+
+    .img 
+        max-width: 460px
+        max-height: 310px
+
+        img
+            width: 100%
+            height: 100%
+            // filter: drop-shadow(0px 16px 10px rgba(0,0,0,0.6))
+
+@media screen and (max-width: 1000px)
+    section.sobre
+        .container
+            .flexSobre
+                flex-direction: column
+
+
+@media screen and (max-width: 678px)
+    header 
+
+        .topHeader
+            .menu
+                display: none
+            
+            .menuMobile
+                display: block
+
+        .chamadaHeader
+            text-align: center
+            margin: 100px auto
+            max-width: 100%
+
+            h2, p, form
+                text-align: center
+
+            h2
+                font-size: 35px
+            
+            p 
+                font-size: 15px
+
+
+            
