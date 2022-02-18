@@ -127,12 +127,49 @@ section.sobre
             width: 100%
             height: 100%
             // filter: drop-shadow(0px 16px 10px rgba(0,0,0,0.6))
+    .imgSobre
+        max-width: 1000px
+        max-height: 350px
+
+        img
+            width: 100%
+            height: 100%
+
+    .textBox
+        text-align: left
+        max-width: 400px
+        width: auto
+        height: auto
+        background-color: #fff
+        padding: 30px
+        box-shadow: 0px 0px 50px rgba(0,0,0,0.3)
+        position: relative
+        left: 450px
+        bottom: 150px
+
+        h2
+            font-size: 25px
+            font-weight: bold
+            margin-bottom: 10px
+        
+        p
+            font-size: 16px
+            color: rgba(0, 0, 0, .6)
+            line-height: 1.4
 
 @media screen and (max-width: 1000px)
     section.sobre
         .container
             .flexSobre
                 flex-direction: column
+
+            .textBox
+                margin: 30px auto
+                left: 0
+                bottom: 0
+                max-width: 800px
+                width: 100%
+
 
 
 @media screen and (max-width: 678px)
