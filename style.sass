@@ -1,3 +1,4 @@
+$colorText: rgba(0, 0, 0, .6)
 *
     margin: 0
     padding: 0
@@ -157,12 +158,66 @@ section.sobre
             color: rgba(0, 0, 0, .6)
             line-height: 1.4
 
+section.produtos
+    .container
+        .title
+            margin: 0 auto 30px auto
+            text-align: center
+            font-size: 15px
+
+            i
+                font-size: 25px
+                margin-top: 10px  
+        
+        .flexProdutos
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .box
+                margin: 5px
+                height: auto
+                max-width: 300px
+                width: 100%
+                box-shadow: 0px 0px 30px rgba(0,0,0,0.2)
+
+                img
+                    width: 100%
+                    height: auto
+
+                .text
+                    padding: 25px
+
+                    h2
+                        font-size: 18px
+                        color: rgba(0, 0, 0, .9)
+                        margin-bottom: 10px
+
+                    p
+                        color: $colorText
+                        line-height: 1.3
+
+                .button
+                    border: 1px solid $colorText
+                    width: auto
+                    height: auto
+                    padding: 10px 15px
+                    border-radius: 30px
+                    display: inline-block 
+                    margin-top: 15px
+                    color: $colorText
+                    cursor: pointer
+
 @media screen and (max-width: 1000px)
     section.sobre
         .container
             .flexSobre
                 flex-direction: column
+                margin: 100px auto 20px auto
 
+            .imgSobre
+                img
+                    display: none
+            
             .textBox
                 margin: 30px auto
                 left: 0
