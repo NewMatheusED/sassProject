@@ -43,6 +43,7 @@ header
                     font-size: 15px
                     font-weight: bold
                     cursor: pointer
+                    transition: all .2s
 
                     &:hover
                         color: #ff5f27
@@ -206,6 +207,29 @@ section.produtos
                     margin-top: 15px
                     color: $colorText
                     cursor: pointer
+
+section.empresas
+    margin-top: 50px
+    .container
+        background-color: #f6f6f6
+        padding: 50px
+        text-align: center
+
+        h2
+            font-size: 23px
+            font-weight: normal
+            margin-bottom: 30px
+
+        .flexEmpresas
+            display: flex
+            justify-content: center
+            align-items: center
+
+            img
+                margin: 20px 50px
+
+                &:first-of-type
+                    height: 46px
 
 @media screen and (max-width: 1000px)
     section.sobre

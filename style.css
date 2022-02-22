@@ -58,6 +58,8 @@ header .topHeader .menu ul li {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 header .topHeader .menu ul li:hover {
@@ -260,6 +262,42 @@ section.produtos .container .flexProdutos .box .button {
   margin-top: 15px;
   color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
+}
+
+section.empresas {
+  margin-top: 50px;
+}
+
+section.empresas .container {
+  background-color: #f6f6f6;
+  padding: 50px;
+  text-align: center;
+}
+
+section.empresas .container h2 {
+  font-size: 23px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+section.empresas .container .flexEmpresas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.empresas .container .flexEmpresas img {
+  margin: 20px 50px;
+}
+
+section.empresas .container .flexEmpresas img:first-of-type {
+  height: 46px;
 }
 
 @media screen and (max-width: 1000px) {
