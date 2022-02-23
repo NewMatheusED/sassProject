@@ -300,6 +300,78 @@ section.empresas .container .flexEmpresas img:first-of-type {
   height: 46px;
 }
 
+section.form {
+  margin-top: 100px;
+}
+
+section.form .container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+section.form .container form .input {
+  text-align: center;
+  margin-top: 10px;
+}
+
+section.form .container form .input span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+section.form .container form .input input {
+  max-width: 400px;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #3333334d;
+  border-radius: 20px;
+}
+
+section.form .container form .input input:focus {
+  outline: none;
+}
+
+section.form .container form .input textarea {
+  max-width: 400px;
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  border: 1px solid #3333334d;
+  border-radius: 20px;
+}
+
+section.form .container form .input textarea:focus {
+  outline: none;
+}
+
+section.form .container form .input:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.form .container input[type="submit"] {
+  display: block;
+  border: none;
+  color: #fff;
+  background-color: #ff5f27;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 40px auto;
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
   section.sobre .container .flexSobre {
     -webkit-box-orient: vertical;
