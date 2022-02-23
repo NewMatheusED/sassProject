@@ -413,5 +413,15 @@ section.form .container input[type="submit"] {
   header .chamadaHeader p {
     font-size: 15px;
   }
+  section.form .container form .input:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px auto;
+  }
+  section.form .container form .input textarea {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
